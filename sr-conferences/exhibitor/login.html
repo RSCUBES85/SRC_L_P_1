@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitor Login | SR Conferences</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body style="background-color: #f0f2f5;">
+
+    <section style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="admin-login-box">
+            <h1>Exhibitor Login</h1>
+            <form id="exhibitorLoginForm">
+                <label for="userid">User ID</label>
+                <input type="text" id="userid" name="userid" placeholder="Enter Exhibitor User ID" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('exhibitorLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent traditional submit
+
+            const userID = document.getElementById('userid').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Simple validation example:
+            // In future real system, you will validate from database
+            if (userID === 'exhibitor1' && password === 'exhibitor123') {
+                window.location.href = 'exhibitor-dashboard.html';
+            } else {
+                alert('Incorrect Exhibitor User ID or Password.');
+            }
+        });
+    </script>
+
+</body>
+</html>

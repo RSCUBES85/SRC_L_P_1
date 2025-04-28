@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Conferences | Conferences</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="./assets/logo/Logo.jpg" alt="SR Conferences Logo" style="height: 100px;">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="conferences.html">Conferences</a>
+                <a href="sponsor.html">Sponsor/Exhibitor</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Our Conferences</h1>
+
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'upcoming')">Upcoming</button>
+                <button class="tab-button" onclick="openTab(event, 'previous')">Previous</button>
+            </div>
+
+            <div id="upcoming" class="tab-content active">
+                <h2>Upcoming Conferences</h2>
+                <div class="conference-list">
+                    <p>No upcoming conferences yet. Stay tuned!</p>
+                </div>
+            </div>
+
+            <div id="previous" class="tab-content">
+                <h2>Previous Conferences</h2>
+                <div class="conference-list">
+                    <p>No previous conferences recorded yet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>SR Aspire (OPC) Pvt. Ltd, Chintalapudi, Andhra Pradesh, India.</p>
+            <div class="footer-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 SR Conferences. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

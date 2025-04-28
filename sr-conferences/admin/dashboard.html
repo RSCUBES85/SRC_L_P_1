@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SR Conferences</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body style="background-color: #f0f2f5;">
+
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="../assets/logo/Logo.jpg" alt="SR Conferences Logo" style="height: 100px;">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <a href="./login.html">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+
+            <!-- Create Exhibitor Section -->
+            <div class="dashboard-section">
+                <h2>Create New Exhibitor</h2>
+                <form id="create-exhibitor-form">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" placeholder="Mobile Number" required>
+                    <input type="text" placeholder="User ID" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Create Exhibitor</button>
+                </form>
+            </div>
+
+            <!-- Exhibitor List Section -->
+            <div class="dashboard-section">
+                <h2>Exhibitor List</h2>
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Exhibitor Name</th>
+                            <th>Mobile</th>
+                            <th>User ID</th>
+                            <th>Event Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="exhibitor-table-body">
+                        <tr>
+                            <td>Sample Exhibitor</td>
+                            <td>+91-9876543210</td>
+                            <td>sampleuser</td>
+                            <td>Neurology Congress 2025</td>
+                            <td>
+                                <button class="btn-small">Update</button>
+                                <button class="btn-small">Reset Password</button>
+                                <button class="btn-small">Remove</button>
+                                <button class="btn-small">View Event</button>
+                            </td>
+                        </tr>
+                        <!-- More exhibitors will appear here dynamically -->
+                    </tbody>
+                </table>
+                <button class="btn-primary" style="margin-top: 1rem;">Download Exhibitor List</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
